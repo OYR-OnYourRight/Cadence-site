@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadence by OYR — Support</title>
+  <meta name="description" content="Get help with the Cadence running app by On Your Right.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #F0EEE6;
+      --text-primary: #1A1A2E;
+      --text-secondary: #6B6B6B;
+      --text-muted: #9A9A9A;
+      --accent: #6B5CE7;
+      --accent-hover: #5A4BD6;
+      --card-bg: #FFFFFF;
+      --card-border: #E8E4DC;
+      --serif: 'DM Serif Display', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* — Nav — */
+    nav {
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 32px 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    nav .brand {
+      font-family: var(--serif);
+      font-size: 1.125rem;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+
+    nav .links {
+      display: flex;
+      gap: 28px;
+    }
+
+    nav .links a {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    nav .links a:hover { color: var(--accent); }
+    nav .links a.active { color: var(--accent); }
+
+    /* — Main — */
+    main {
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+      flex: 1;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      font-size: 1.0625rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 520px;
+      margin-bottom: 48px;
+    }
+
+    /* — Contact Card — */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 36px 32px;
+      margin-bottom: 20px;
+    }
+
+    .card-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .card-email {
+      font-family: var(--serif);
+      font-size: 1.375rem;
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .card-email:hover {
+      color: var(--accent-hover);
+    }
+
+    .response-note {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    /* — Footer — */
+    footer {
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 24px 48px;
+      border-top: 1px solid var(--card-border);
+      padding-top: 32px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.8125rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+
+    .footer-links .sep {
+      color: var(--card-border);
+      user-select: none;
+    }
+
+    .footer-meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    /* — Responsive — */
+    @media (max-width: 480px) {
+      nav { padding-top: 24px; }
+      main { padding: 56px 20px 80px; }
+      h1 { font-size: 2rem; }
+      .card { padding: 28px 24px; }
+      .card-email { font-size: 1.2rem; }
+      footer { padding: 0 20px 36px; padding-top: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="brand">CADENCE</a>
+    <div class="links">
+      <a href="/support" class="active">Support</a>
+      <a href="/privacy">Privacy</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Need help with Cadence?</h1>
+    <p class="intro">
+      Cadence is built by On Your Right, a running brand from India. 
+      If something isn't working, or if you have a question about the app, 
+      we'd like to hear from you.
+    </p>
+
+    <div class="card">
+      <p class="card-label">Email us</p>
+      <a href="mailto:support@onyourright.in" class="card-email">support@onyourright.in</a>
+    </div>
+
+    <p class="response-note">We typically respond within 48 hours.</p>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/privacy">Privacy Policy</a>
+      <span class="sep">|</span>
+      <a href="/support">Support</a>
+    </div>
+    <div class="footer-meta">
+      &copy; 2026 On Your Right<br>
+      Cadence by OYR
+    </div>
+  </footer>
+
+</body>
+</html>
